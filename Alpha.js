@@ -3327,6 +3327,24 @@ Report Message: ${text}` })
 reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, If You Play With This, Use This Feature Again And Again For No Reason, You Will Be Blocked For Sure !`)
                     }
                     break
+		Module({
+  pattern: 'ping',
+  fromMe: w,
+  use: 'utility',
+  desc: 'Measures ping'
+}, (async (message, match) => {
+  const start = new Date().getTime()
+  await message.client.sendMessage(message.jid, {
+      text: '*❮ ᴛᴇsᴛɪɴɢ ᴘɪɴɢ ❯*'
+  })
+  const end = new Date().getTime()
+  await message.client.sendMessage(message.jid, {
+      text: '*ʀᴇsᴘᴏɴsᴇ ɪɴ ' + (end - start) + ' _ᴍs_*'
+  }, {
+      quoted: message.data
+  })
+}));
+		break
                     
            
                 case 'command': case 'menu':{
