@@ -4,6 +4,138 @@
   "repository": "https://telegra.ph/file/f3b0b4e681583334b7330.jpg",
   "logo": "https://telegra.ph/file/f3b0b4e681583334b7330.jpg",
   "keywords": ["nodejs", "bot", "md whatsapp bot", "whatsapp automation", "multi device"],
+   "env": {
+            "KINGBOTMD_SESSION": {
+            "description": "ᴘᴀꜱᴛᴇ ᴛʜᴇ Qʀ ᴄᴏᴅᴇ ᴀɴᴅ ᴘᴀꜱᴛᴇ ᴛʜᴇ ꜱᴇꜱꜱɪᴏɴ.",
+            "required": true
+             },
+            "MENU_CMD": {
+            "description": "ᴇɴᴛᴇʀ ᴛʜᴇ ᴍᴇɴᴜ ᴄᴏᴍᴍᴀɴᴅ.",
+            "value": "king"
+            "required": true
+             },
+            "TIME_ZONE": {
+            "description": "ᴅᴏɴᴛ ᴄʜᴀɴɢᴇ ᴛʜɪꜱ.",
+            "value": "Asia/colombo" ,
+            "required": true
+             },
+            "AUTO_REACT": {
+            "description": "ᴄᴏᴍᴍɪɴɢ ꜱᴏᴏɴ ᴛʜɪꜱ ꜰᴇᴀᴛᴜʀᴇ.",
+            "value": "false" ,
+            "required": true
+             },
+            "ANTI_LINK": {
+            "description": "ᴄᴏᴍᴍɪɴɢ ꜱᴏᴏɴ ᴛʜɪꜱ ꜰᴇᴀᴛᴜʀᴇ.",
+            "value": "false" ,
+            "required": true
+             },
+            "CAPTION": {
+            "description": "ᴇɴᴛᴇʀ ᴛʜᴇ ᴄᴀᴘᴛɪᴏɴ ꜰᴏʀ ᴠɪᴅᴇᴏ ᴀɴᴅ ɪᴍᴀɢᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ.",
+            "value": "ɢᴇɴᴇᴛᴀʀᴀᴛᴇᴅ ʙʏ ᴋɪɴɢ ʙᴏᴛ ²⁰²²" ,
+            "required": true
+             },
+            "INBOX_BLOCK": {
+            "description": "ᴄᴏᴍᴍɪɴɢ ꜱᴏᴏɴ ᴛʜɪꜱ ꜰᴇᴀᴛᴜʀᴇ.",
+            "value": "false" ,
+            "required": true
+             },
+            "INBOX_BLOCK_MSG": {
+            "description": "ᴄᴏᴍᴍɪɴɢ ꜱᴏᴏɴ ᴛʜɪꜱ ꜰᴇᴀᴛᴜʀᴇ.",
+            "value": "default" ,
+            "required": true
+             },
+            "ALIVE_MESSAGE": {
+            "description": "ᴇɴᴛᴇʀ ᴛʜᴇ ᴀʟɪᴠᴇ ᴍᴀꜱꜱᴀɢᴇ.",
+            "value": "default", 
+            "required": true
+             },
+            "ALIVE_LOGO": {
+            "description": "ᴅᴏɴᴛ ᴄʜᴀɴɢᴇ ᴛʜɪꜱ.",
+            "value": "https://telegra.ph/file/24b9b8507613125d34bd1.jpg" ,
+            "required": true
+             },
+            "SONG_DOWNLOAD": {
+            "description": "ᴇɴᴛᴇʀ ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴍᴀꜱꜱᴀɢᴇ.",
+            "value": "*📥 Downloading your song...*" ,
+            "required": true
+             }, 
+            "SONG_UPLOAD": {
+            "description": "ᴇɴᴛᴇʀ ꜱᴏɴɢ ᴜᴘʟᴏᴀᴅɪɴɢ ᴍᴀꜱꜱᴀɢᴇ.",
+            "value": "*📤 Uploading your song...*" ,
+            "required": true
+             },
+            "VIDEO_DOWNLOAD": {
+            "description": "ᴇɴᴛᴇʀ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴍᴀꜱꜱᴀɢᴇ.",
+            "value": "*📥 Downloading your video...*" ,
+            "required": true
+             },
+            "VIDEO_UPLOAD": {
+            "description": "ᴇɴᴛᴇʀ ᴠɪᴅᴇᴏ ᴜᴘʟᴏᴀᴅɪɴɢ ᴍᴀꜱꜱᴀɢᴇ.",
+            "value": "*📤 Uploading your video...*" ,
+            "required": true
+             },
+            "WORK_TYPE": {
+            "description": "ᴇɴᴛᴇʀ ᴛʜᴇ ᴋɪɴɢ ʙᴏᴛ'ꜱ ᴡᴏʀᴋ ᴛʏᴘᴇ.",
+            "value": "public" ,
+            "required": true
+             },
+            "SUDO": {
+            "description": "",
+            "value": "" ,
+            "required": false
+             },
+            "LANGUAGE": {
+            "description": "ꜱᴇʟᴇᴄᴛ ʏᴏᴜʀ ʙᴏᴛ ʟᴀɴɢᴜᴀɢᴇ.  | ꜱɪɴʜᴀʟᴀ => ꜱɪ | ᴇɴɢʟɪꜱʜ => ᴇɴ | ",
+            "value": "EN" ,
+            "required": true
+             },
+            "HEROKU": {
+            "description": "ᴅᴏɴ'ᴛ ᴄʜᴀɴɢᴇ ᴛʜɪꜱ.",
+            "value": "true" ,
+            "required": true
+             },
+            "HEROKU_API_KEY": {
+            "description": "",
+            "value": "" ,
+            "required": true
+             },
+            "HEROKU_APP_NAME": {
+            "description": "",
+            "value": "" ,
+            "required": true
+             },
+            "BAN_MESSAGE": {
+            "description": "ᴛʏᴘᴇ ᴅᴇꜰᴀᴜʟᴛ ᴏʀ ᴄᴜꜱᴛᴏᴍɪᴢᴇ ᴍᴀꜱꜱᴀɢᴇ.",
+            "value": "default" ,
+            "required": true
+             },
+            "ADD_MESSAGE": {
+            "description": "ᴛʏᴘᴇ ᴅᴇꜰᴀᴜʟᴛ ᴏʀ ᴄᴜꜱᴛᴏᴍɪᴢᴇ ᴍᴀꜱꜱᴀɢᴇ.",
+            "value": "default" ,
+            "required": true
+             },
+            "PROMOTE_MESSAGE": {
+            "description": "ᴛʏᴘᴇ ᴅᴇꜰᴀᴜʟᴛ ᴏʀ ᴄᴜꜱᴛᴏᴍɪᴢᴇ ᴍᴀꜱꜱᴀɢᴇ.",
+            "value": "default" ,
+            "required": true
+             },
+            "DEMOTE_MESSAGE": {
+            "description": "ᴛʏᴘᴇ ᴅᴇꜰᴀᴜʟᴛ ᴏʀ ᴄᴜꜱᴛᴏᴍɪᴢᴇ ᴍᴀꜱꜱᴀɢᴇ.",
+            "value": "default" ,
+            "required": true
+             },
+            "MUTE_MESSAGE": {
+            "description": "ᴛʏᴘᴇ ᴅᴇꜰᴀᴜʟᴛ ᴏʀ ᴄᴜꜱᴛᴏᴍɪᴢᴇ ᴍᴀꜱꜱᴀɢᴇ.",
+            "value": "default" ,
+            "required": true
+             },
+            "UNMUTE_MESSAGE": {
+            "description": "ᴛʏᴘᴇ ᴅᴇꜰᴀᴜʟᴛ ᴏʀ ᴄᴜꜱᴛᴏᴍɪᴢᴇ ᴍᴀꜱꜱᴀɢᴇ.",
+            "value": "default" ,
+            "required": true
+             }
+        
+     },
   "buildpacks": [
     {
       "url": "heroku/nodejs"
