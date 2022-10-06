@@ -1,5 +1,8 @@
 FROM node:lts-buster
 
+RUN git clone https://github.com/ALPHA-TEAM-OFFICIAL/ALPHA-MD-WA-BOT
+ENV TZ=Asia/Colombo
+ENV BOTNAME=ALPHA-MD
 RUN apt-get update && \
   apt-get install -y \
   ffmpeg \
